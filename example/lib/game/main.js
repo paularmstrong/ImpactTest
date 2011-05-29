@@ -14,7 +14,7 @@ ig.module(
 
 
         init: function () {
-            // Initialize your game here; bind keys etc.
+            ig.input.bind(ig.KEY.MOUSE1, 'mousedown');
         },
 
         update: function () {
