@@ -1,3 +1,3 @@
 exports.config = {
-    impactLib: __dirname + '/../example/lib/'
+    root: __dirname + '/../example/lib/'
 };

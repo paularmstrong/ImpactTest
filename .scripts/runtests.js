@@ -1,4 +1,5 @@
 require.paths.unshift(__dirname + '/../node_modules/');
+require.paths.unshift(__dirname + '/../lib/');
 
 var util = require('util'),
     child_process = require('child_process'),

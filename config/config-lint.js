@@ -12,7 +12,7 @@ var options = {
     debug: false,
     devel: true,
     eqeqeq: true,
-    evil: false,
+    evil: true,
     forin: false,
     fragment: false,
     immed: false,
