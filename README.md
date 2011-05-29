@@ -46,3 +46,7 @@ Using `ig.testCase` will allow you to specify custom setUp and tearDown methods 
             test.done();
         }
     });
+
+### Assertions
+
+For help writing tests and assertions, check the [Nodeunit README](https://github.com/caolan/nodeunit/blob/master/README.md).
