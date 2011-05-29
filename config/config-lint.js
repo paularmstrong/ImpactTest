@@ -1,6 +1,6 @@
 exports.config = {
     root: __dirname + '/../',
-    pathIgnore: ['*node_modules*']
+    pathIgnore: ['*node_modules*', '*example/lib/impact*']
 };
 
 var options = {
