@@ -1,0 +1,20 @@
+61c61
+< (function(window){
+---
+> (function(){
+63c63
+< window.ig = {
+---
+> ig = {
+340,340c340,340
+< window.ig.Class = function(){};
+---
+> ig.Class = function(){};
+367c367
+< window.ig.Class.extend = function(prop) {
+---
+> ig.Class.extend = function(prop) {
+427c427
+< })(window);
+---
+> })();
