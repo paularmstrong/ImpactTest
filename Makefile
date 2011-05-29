@@ -7,4 +7,10 @@ setup:
 depend:
 	@.scripts/install-dependencies.sh
 
-.PHONY: all setup
+test:
+	@node .scripts/runtests.js -c ../config/config-test.js
+
+lint:
+	@node .scripts/runlint.js -c ../config/config-lint.js
+
+.PHONY: all setup depend test lint
