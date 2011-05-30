@@ -5,7 +5,8 @@ var util = require('util'),
     child_process = require('child_process'),
     nodeunit = require('nodeunit'),
     configFile = './config/config-test',
-    config, test_runner;
+    ignore = '',
+    config, test_runner, i;
 
 process.argv.forEach(function (val, index, array) {
     if (index < 2) {
@@ -26,4 +27,9 @@ function runTests(error, stdout, stderr) {
     test_runner.run(tests);
 }
 
-child_process.exec('find . | grep "\\.test\\.js$"', { cwd: config.root }, runTests);
+i = config.pathIgnore.length;
+while (i--) {
+    ignore += ' ! -path "' + config.pathIgnore[i] + '"';
+}
+
+child_process.exec('find . -name "*.test.js" ' + ignore, { cwd: config.root }, runTests);
