@@ -8,9 +8,9 @@ depend:
 	@.scripts/install-dependencies.sh
 
 test:
-	@node .scripts/runtests.js -c ../config/config-test.js
+	@node ./runtests.js -c ./config/config-test.js
 
 lint:
-	@node .scripts/runlint.js -c ../config/config-lint.js
+	@node ./runlint.js -c ./config/config-lint.js
 
 .PHONY: all setup depend test lint
