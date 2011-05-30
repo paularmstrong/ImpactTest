@@ -18,6 +18,7 @@ process.argv.forEach(function (val, index, array) {
 });
 
 config = require(configFile).config;
+global.config = config;
 test_runner = nodeunit.reporters[config.test_runner];
 
 function runTests(error, stdout, stderr) {
